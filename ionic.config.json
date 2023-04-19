@@ -1,0 +1,7 @@
+{
+  "name": "canki-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
