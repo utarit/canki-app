@@ -11,7 +11,7 @@ const tabs = [
     path: "/metronom",
   },
   {
-    label: "Paylaşımlar",
+    label: "Postlar",
     path: "/posts",
   },
 ];

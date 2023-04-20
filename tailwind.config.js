@@ -29,7 +29,6 @@ module.exports = {
           error: "#E8596C",
         },
       },
-      "dark",
     ],
   },
   plugins: [require("daisyui")],
