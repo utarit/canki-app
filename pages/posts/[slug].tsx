@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Image from "next/image";
+import Link from "next/link";
 
 const PostPage = ({ post }: { post: any }) => {
   const date = new Date(post.date.seconds * 1000);
@@ -17,6 +18,22 @@ const PostPage = ({ post }: { post: any }) => {
     <main className="flex justify-center">
       <article className="container prose p-4">
         <aside>
+          <Link href="/posts">
+            <svg
+              className="inline"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+            Geri
+          </Link>
           <Image src={post.thumbnail} alt="title" width={600} height={400} />
           <div className="flex justify-center items-center">
             <small>{post.author}</small>&nbsp;•&nbsp;
