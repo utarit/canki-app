@@ -67,13 +67,15 @@ function Metronome() {
       <h1 className="text-xl font-bold my-4">Metronom</h1>
 
       <aside>
-        <label className="label">
-          BPM:&nbsp;
+        <label className="label flex flex-col gap-2">
+          BPM: {bpm}
           <input
-            className="input input-bordered w-full max-w-xs"
-            type="number"
+            type="range"
+            min="100"
+            max="120"
             value={bpm}
             onChange={handleBpmChange}
+            className="range"
           />
         </label>
         <button
