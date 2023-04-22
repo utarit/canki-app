@@ -64,9 +64,9 @@ function Metronome() {
           content="Burdan bası ritmini dinleyebilir, kendinize şarkı seçebilirsiniz."
         />
       </Head>
-      <h1 className="text-xl font-bold my-4">Metronom</h1>
+      <h1 className="text-4xl font-bold my-4">Metronom</h1>
 
-      <aside>
+      <aside className="p-8 w-full sm:w-96">
         <label className="label flex flex-col gap-2">
           BPM: {bpm}
           <input
@@ -79,7 +79,7 @@ function Metronome() {
           />
         </label>
         <button
-          className="btn btn-secondary btn-block"
+          className="btn btn-secondary btn-block mt-2"
           onClick={handlePlayToggle}
           type="button"
         >
