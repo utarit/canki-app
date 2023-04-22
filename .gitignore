@@ -35,5 +35,6 @@ yarn-error.log*
 next-env.d.ts
 utils/firebase.ts
 *.jks
+android/key.properties
 
 resources/android/**/*
