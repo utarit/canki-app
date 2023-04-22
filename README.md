@@ -17,7 +17,7 @@ To run the app locally on your machine, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/utarit/ocit-canki.git
+   git clone https://github.com/utarit/canki-app.git
    ```
 
 2. Install the dependencies:
