@@ -1,4 +1,4 @@
-package canki.app;
+package com.maks.ocitfirstaid;
 
 import com.getcapacitor.BridgeActivity;
 

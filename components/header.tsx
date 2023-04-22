@@ -3,6 +3,10 @@ import React from "react";
 
 const tabs = [
   {
+    label: "TYD",
+    path: "/tyd",
+  },
+  {
     label: "Biz kimiz",
     path: "/ocit",
   },
@@ -56,7 +60,7 @@ export default function Header() {
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             {tabs.map((tab) => (
-              <li key={tab.path}>
+              <li className="mr-2" key={tab.path}>
                 <Link href={tab.path}>{tab.label}</Link>
               </li>
             ))}

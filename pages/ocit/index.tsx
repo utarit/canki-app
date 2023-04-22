@@ -1,9 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 const OcitPage = () => {
   return (
     <main className="flex justify-center">
+      <Head>
+        <title>OCİT Kimdir</title>
+        <meta
+          name="description"
+          content="OCİT nedir, kimdir tanımak isterseniz bizi takipte kalın."
+        />
+      </Head>
       <article className="container prose p-4">
         <h1>OCİT Kimdir?</h1>
         <Image alt="karavan" src="karavan.png" width={600} height={400} />
@@ -63,10 +71,10 @@ const OcitPage = () => {
             geliştirdi.
           </li>
           <li className="step step-secondary">
-            Ayrılma zamanı geldiğinde hatırlanacak bir OCİT Mezunu oldu.
+            Ayrılma zamanı geldiğinde unutulmayacak bir OCİT Mezunu oldu.
           </li>
           <li className="step step-secondary">
-            Hala katılmaya devam ediyor, okul bitsede OCİT bitmez.
+            Hala katılmaya devam ediyor, okul bitse de OCİT bitmez.
           </li>
         </ul>
       </article>

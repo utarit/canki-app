@@ -10,12 +10,17 @@ import React from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const PostPage = ({ post }: { post: any }) => {
   const date = new Date(post.date.seconds * 1000);
 
   return (
     <main className="flex justify-center">
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+      </Head>
       <article className="container prose p-4">
         <aside>
           <Link href="/posts">
@@ -34,7 +39,12 @@ const PostPage = ({ post }: { post: any }) => {
             </svg>
             Geri
           </Link>
-          <Image src={post.thumbnail} alt="title" width={600} height={400} />
+          <Image
+            src={post.thumbnail}
+            alt={post.title}
+            width={600}
+            height={400}
+          />
           <div className="flex justify-center items-center">
             <small>{post.author}</small>&nbsp;•&nbsp;
             <small>

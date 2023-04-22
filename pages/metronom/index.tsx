@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
@@ -56,6 +57,13 @@ function Metronome() {
 
   return (
     <main className="min-h-screen flex flex-col items-center pt-4">
+      <Head>
+        <title>Metronom</title>
+        <meta
+          name="description"
+          content="Burdan bası ritmini dinleyebilir, kendinize şarkı seçebilirsiniz."
+        />
+      </Head>
       <h1 className="text-xl font-bold my-4">Metronom</h1>
 
       <aside>

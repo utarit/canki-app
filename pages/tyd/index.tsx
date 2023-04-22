@@ -1,10 +1,18 @@
 import React from "react";
 import { cprSteps } from "@/utils/cprSteps";
 import Image from "next/image";
+import Head from "next/head";
 
 const CprPage = () => {
   return (
     <main className="flex flex-col items-center pb-4">
+      <Head>
+        <title>TYD Notları</title>
+        <meta
+          name="description"
+          content="Adım adım temel yaşam desteği nasıl yapılır bir bakın."
+        />
+      </Head>
       <h1 className="text-xl font-bold m-4">Temel Yaşam Desteği Adımları</h1>
       {cprSteps.map((step, index) => (
         <React.Fragment key={step.image}>

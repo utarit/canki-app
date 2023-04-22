@@ -3,10 +3,18 @@ import { DocumentData, collection, getDocs } from "firebase/firestore";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const Posts = ({ posts }: { posts: any[] }) => {
   return (
     <main className="p-4 flex flex-col items-center min-h-screen">
+      <Head>
+        <title>Paylaşımlar ({posts.length})</title>
+        <meta
+          name="description"
+          content="OCİT'ten yardımcı olacak paylaşımlar"
+        />
+      </Head>
       <h1 className="text-xl font-bold mb-4">OCİT&apos;ten Paylaşımlar</h1>
       <ul className="flex flex-col gap-4 max-w-lg">
         {posts.map((post) => (
