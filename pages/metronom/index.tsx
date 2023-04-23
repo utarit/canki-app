@@ -89,7 +89,7 @@ function Metronome() {
       <article className="prose p-4 container">
         <p>
           Kalp masajı yaparken önerilen ritim 100-120 BPM olacak şekilde
-          olmalıdır. Size bu hızlı geliyorsa even haklısınız, hızlı yapmanız
+          olmalıdır. Size bu hızlı geliyorsa evet haklısınız, hızlı yapmanız
           gerekiyor.
         </p>
         Aklınızda tutmak için bazı şarkı önerileri
